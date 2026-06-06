@@ -2,7 +2,7 @@ import { useState } from "react";
 function Counter(){
     const [count, setCount] = useState(0);
     function tambah () {
-        setCount(count + 1);
+        setCount(prevCount => prevCount + 1);
  
     }
     function reset(){

@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   function closeMenu() {
@@ -25,32 +24,30 @@ function Navbar() {
       </button>
       <ul className={`nav-menu ${isOpen ? 'open' : ''}`}>
         <li>
-          <Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={closeMenu}>
+          <NavLink to="/" onClick={closeMenu}>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/experience"
-            className={location.pathname === '/experience' ? 'active' : ''}
             onClick={closeMenu}
           >
             Experience
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/project"
-            className={location.pathname === '/project' ? 'active' : ''}
             onClick={closeMenu}
           >
             Project
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={closeMenu}>
+          <NavLink to="/about" onClick={closeMenu}>
             About
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

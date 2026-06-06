@@ -1,10 +1,10 @@
 import './Siswa.css';
 
 // Keep default export name stable for existing imports.
-function SiswaInfo(props) {
+function SiswaInfo({ nama, kelas }) {
   return (
-    <p className="kalimat2">
-      Website ini menampilkan pengalaman {props.nama} kelas {props.kelas}, lalu
+    <p className="kalimat">
+      Website ini menampilkan pengalaman {nama} kelas {kelas}, lalu
       mengembangkannya menjadi portfolio yang runtut mulai dari PKL, freelance,
       lomba, ekstrakurikuler, sampai project.
     </p>
@@ -12,4 +12,3 @@ function SiswaInfo(props) {
 }
 
 export default SiswaInfo;
-
