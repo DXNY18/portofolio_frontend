@@ -24,7 +24,7 @@ function Project() {
       if (projectItems.length > 0) {
         projects = projectItems;
       }
-    } catch (error) {
+    } catch {
       projects = fallbackProjects;
     }
   }

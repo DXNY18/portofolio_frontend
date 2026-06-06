@@ -42,7 +42,7 @@ function Experience() {
 
     try {
       return JSON.parse(saved);
-    } catch (error) {
+    } catch {
       return initialExperiences;
     }
   });

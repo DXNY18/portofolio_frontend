@@ -19,7 +19,7 @@ function About() {
 
         setApiPosts(data);
         setStatus('success');
-      } catch (error) {
+      } catch {
         if (!isMounted) {
           return;
         }
