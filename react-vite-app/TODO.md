@@ -8,3 +8,4 @@
 - [x] 5) Jalankan `npm run build` dan `npm run preview` untuk memastikan deploy-ready.
 
 - [x] 6) Update `TODO.md` progress setelah tiap tahap.
+- [ ] 7) Perbaiki Root Directory di Settings Vercel menjadi `react-vite-app`.
